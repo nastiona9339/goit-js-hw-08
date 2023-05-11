@@ -49,7 +49,7 @@ form.addEventListener("submit", onSubmit)
 
 function onSubmit(e) {
     e.preventDefault()
-    localStorage.clear()
+    localStorage.removeItem("feedback-form-state")
     console.log(info);
     form.reset()
     }
